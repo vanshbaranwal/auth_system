@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Auth_SYS</title>
     <link rel="stylesheet" href="../css/dashboard.css">
+    <!-- <script src="../js/dashboard.js" defer></script> -->
 </head>
 <body>
       <!-- ── NAVBAR ── -->
   <nav class="navbar">
     <div class="nav-logo">Auth_SYS</div>
     <div class="nav-right">
-      <span class="nav-user">vansh@gmail.com</span>
+      <span class="nav-user" id="navEmail"></span>
       <button class="btn-logout">LOGOUT</button>
     </div>
   </nav>
@@ -22,7 +23,7 @@
     <!-- Greeting -->
     <div class="greeting-row">
       <p class="greeting-sub">dashboard</p>
-      <h1 class="greeting-title">Welcome back, <span>Vansh</span> 👋</h1>
+      <h1 class="greeting-title">Welcome, <span id="welcomeName"></span> 👋</h1>
     </div>
  
     <!-- Profile Card -->
@@ -38,15 +39,15 @@
       <div class="profile-grid">
         <div class="profile-row">
           <span class="row-key">Name</span>
-          <span class="row-val">Vansh Baranwal</span>
+          <span class="row-val" id="profileName"></span>
         </div>
         <div class="profile-row">
           <span class="row-key">Email</span>
-          <span class="row-val">vansh@gmail.com</span>
+          <span class="row-val" id="profileEmail"></span>
         </div>
         <div class="profile-row">
           <span class="row-key">Role</span>
-          <span class="row-val">User</span>
+          <span class="row-val" id="profileRole"></span>
         </div>
         <div class="profile-row">
           <span class="row-key">Verified</span>
@@ -56,7 +57,7 @@
         </div>
         <div class="profile-row" style="grid-column: 1 / -1; border-right: none; padding-right: 0;">
           <span class="row-key">User ID</span>
-          <span class="row-val mono">usr_a4f82bc91d073e56</span>
+          <span class="row-val mono" id="profileId"></span>
         </div>
       </div>
     </div>
